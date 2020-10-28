@@ -3,24 +3,24 @@ const sequelize = require('../config/connection');
 
 const userData = [
     {
-        username: 'Pachinko',
-        email: 'Min Jin Lee',
-        password: 'Fiction',
+        username: 'Min Jin Lee',
+        email: 'min@gmail.com',
+        password: 'password1',
     },
     {
-        username: 'A Girl Like That',
-        email: 'Tanaz Bhatena',
-        password: 'Fiction',
+        username: 'Tanaz Bhatena',
+        email: 'tanaz@gmail.com',
+        password: 'password12',
     },
     {
-        username: 'How the Garcia Girls Lost Their Accents',
-        email: 'Julia Alvarez',
-        password: 'Fiction',
+        username: 'Julia Alvarez',
+        email: 'julia@gmail.com',
+        password: 'password13',
     },
     {
-        username: 'Saving Ruby King: A Novel',
-        email: 'Catherine Adel West',
-        password: 'Fiction',
+        username: 'Catherine Adel West',
+        email: 'cath@gmail.com',
+        password: 'password155',
     }
 ];
 
@@ -30,7 +30,7 @@ sequelize
         return User.bulkCreate(userData);
     })
     .then(data => {
-        console.log('Books seeded!');
+        console.log('\n Users seeded!');
         process.exit(0);
     })
     .catch(err => {

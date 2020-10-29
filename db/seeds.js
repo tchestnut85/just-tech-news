@@ -3,24 +3,24 @@ const sequelize = require('../config/connection');
 
 const userData = [
     {
-        username: 'Min Jin Lee',
-        email: 'min@gmail.com',
-        password: 'password1',
+        username: 'the_silent_wolf',
+        email: 'ned@winterfell.com',
+        password: 'winteriscoming',
     },
     {
-        username: 'Tanaz Bhatena',
-        email: 'tanaz@gmail.com',
-        password: 'password12',
+        username: 'king_slayer',
+        email: 'jaime@casterlyrock.com',
+        password: 'brienne',
     },
     {
-        username: 'Julia Alvarez',
-        email: 'julia@gmail.com',
-        password: 'password13',
+        username: 'dragon_mom',
+        email: 'daenerys@targaryen.com',
+        password: 'wherearemydragons',
     },
     {
-        username: 'Catherine Adel West',
-        email: 'cath@gmail.com',
-        password: 'password155',
+        username: 'hodor',
+        email: 'hodor@hodor.com',
+        password: 'hodorhodor',
     }
 ];
 

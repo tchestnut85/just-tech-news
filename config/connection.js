@@ -10,17 +10,4 @@ const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, proces
     port: 3306
 });
 
-// const sequelize = process.env.JAWSDB_URL
-//     ? new Sequelize(process.env.JAWSDB_URL)
-//     : new Sequelize('just_tech_news_db', 'root', 'poplar', {
-//         host: 'localhost',
-//         port: 3306,
-//         dialect: 'mysql',
-//         pool: {
-//             max: 5,
-//             min: 0,
-//             idle: 10000
-//         }
-//     });
-
 module.exports = sequelize;

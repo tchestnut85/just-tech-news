@@ -1,7 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-const { post } = require('../routes');
-const { truncate } = require('./User');
 
 // create the Post model with the upvote() model method
 class Post extends Model {

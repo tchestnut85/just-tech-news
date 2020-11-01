@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Post, User, Vote, Comment } = require('../../models');
 const sequelize = require('../../config/connection');
 
-// get all users
+// get all posts
 router.get('/', (req, res) => {
     console.log('\n ------------------');
     Post.findAll({
@@ -66,7 +66,7 @@ router.get('/:id', (req, res) => {
     })
         .then(dbPostData => {
             if (!dbPostData) {
-                res.status(404).json({ message: '\n No post found with this ID!' });
+                res.status(404).json({ message: 'No post found with this ID!' });
                 return;
             }
             res.json(dbPostData);

@@ -13,7 +13,7 @@ const userData = [
         password: 'brienne',
     },
     {
-        username: 'dragon_mom',
+        username: 'stormborn',
         email: 'daenerys@targaryen.com',
         password: 'wherearemydragons',
     },
@@ -21,6 +21,11 @@ const userData = [
         username: 'hodor',
         email: 'hodor@hodor.com',
         password: 'hodorhodor',
+    },
+    {
+        username: 'snowbro',
+        email: 'jon@thewall.com',
+        password: 'ghost'
     }
 ];
 

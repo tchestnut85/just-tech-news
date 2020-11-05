@@ -1,5 +1,5 @@
-async function signupFormHandler(e) {
-    e.preventDefault();
+async function signupFormHandler(event) {
+    event.preventDefault();
 
     const username = document.querySelector('#username-signup').value.trim();
     const email = document.querySelector('#email-signup').value.trim();
@@ -25,8 +25,8 @@ async function signupFormHandler(e) {
     }
 };
 
-async function loginFormHandler(e) {
-    e.preventDefault();
+async function loginFormHandler(event) {
+    event.preventDefault();
 
     const email = document.querySelector('#email-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();

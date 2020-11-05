@@ -1,7 +1,6 @@
-const { response } = require("express");
-
 async function deleteFormHandler(event) {
     event.preventDefault();
+
     await fetch(`/api/posts/${id}`, {
         method: 'DELETE'
     });

@@ -43,7 +43,7 @@ async function loginFormHandler(e) {
 
         if (response.ok) {
             document.location.replace('/dashboard');
-            console.log(`logged in!`);
+            console.log('logged in!');
         } else {
             alert(response.statusText);
         }

@@ -56,7 +56,7 @@ router.get('/:id', (req, res) => {
 });
 
 // POST /api/users
-router.post('/', withAuth, (req, res) => {
+router.post('/', (req, res) => {
     User.create({
         // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
         username: req.body.username,
@@ -116,7 +116,7 @@ router.post('/logout', withAuth, (req, res) => {
 });
 
 // PUT /api/users/1
-router.put('/:id', withAuth, (req, res) => {
+router.put('/:id', (req, res) => {
     User.update(req.body, {
         individualHooks: true,
         where: {
